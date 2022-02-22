@@ -1,0 +1,64 @@
+package br.fai.ex01;
+import java.util.Scanner;
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+
+		Main app = new Main();
+		System.out.printf("Qual exercicio?\n");
+		int exercicio = ler.nextInt();
+		if (exercicio == 1) app.start1();
+		else if (exercicio == 2) app.start2();
+		else if (exercicio == 3) app.start3();
+		else if (exercicio == 4) app.start4();
+		else if (exercicio == 5) app.start5();
+		else if (exercicio == 6) app.start6();
+		else if (exercicio == 7) app.start7();
+
+	}
+
+	private void start1 () {
+		int idade = 15;
+		System.out.printf("A idade eh de %d anos. \n", idade);
+		idade+=5;
+		idade*=2;
+		System.out.printf("Resultado 1: %d.\n", idade);
+		idade-=5;
+		System.out.printf("Resultado 2: %d. \n", idade);
+		if (idade>20) {
+			System.out.printf("Idade maior que 20. \n");
+		}
+		else System.out.printf("Idade maior que 20. \n	");
+	}
+
+	private void start2() {
+		Scanner ler = new Scanner(System.in);
+		System.out.printf("Entre com o numero desejado: ");
+		double produto = ler.nextDouble();
+		int produtoInt = (int) produto;
+		System.out.printf("Valor com casas decimais: %.2f | Valor inteiro: %d \n" , produto, produtoInt);
+	}
+
+	private void start3() {
+		
+	}
+
+	private void start4() {
+		
+	}
+
+	private void start5() {
+		
+	}
+
+	private void start6() {
+		
+	}
+	private void start7() {
+		
+	}
+}
