@@ -114,21 +114,9 @@ public class Main {
 		MeuArray[2] = "palio";
 		MeuArray[3] = "uno";
 		int n = 0;
-		while (n < MeuArray.length && MeuArray[n] != null) {
+		while (n < MeuArray.length) {
 			System.out.printf("%s\n\n", MeuArray[n]);
 			n++;
-		}
-		MeuArray[1] = "L200";
-		for (String Teste : MeuArray) {
-			if (Teste != null)
-				System.out.printf("%s\n\n", Teste);
-		}
-		
-		MeuArray[4] = "gol";
-		
-		for (String Teste : MeuArray) {
-			if (Teste != null)
-				System.out.printf("%s\n\n", Teste);
 		}
 
 	}

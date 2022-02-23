@@ -123,13 +123,6 @@ public class Main {
 			if (Teste != null)
 				System.out.printf("%s\n\n", Teste);
 		}
-		
-		MeuArray[4] = "gol";
-		
-		for (String Teste : MeuArray) {
-			if (Teste != null)
-				System.out.printf("%s\n\n", Teste);
-		}
 
 	}
 
