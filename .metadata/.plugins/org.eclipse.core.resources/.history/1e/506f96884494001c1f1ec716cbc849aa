@@ -107,30 +107,24 @@ public class Main {
 	}
 
 	private void start6() {
-
+		
 		String[] MeuArray = { "civic", "gol", "palio", "uno" };
 		int n = 0;
-		while (n < MeuArray.length) {
+		while (n < MeuArray.length ) {
 			System.out.printf("Nome do Carro: %s\n\n", MeuArray[n]);
 			n++;
 		}
 		MeuArray[1] = "L200";
 		System.out.printf("\n ---------\n");
 		for (String Teste : MeuArray) {
-			System.out.printf("Nome do Carro: %s\n\n", Teste);
+				System.out.printf("Nome do Carro: %s\n\n", Teste);
 		}
-		String[] MeuNovoArray = new String[MeuArray.length + 1];
-		n = 0;
-		while (n < MeuNovoArray.length - 1) {
-			MeuNovoArray[n] = MeuArray[n];
-			n++;
-		}
-		MeuNovoArray[4] = "gol";
 
+		MeuArray[4] = "gol";
 		System.out.printf("\n ---------\n");
 
-		for (String Teste : MeuNovoArray) {
-			System.out.printf("Nome do Carro: %s\n\n", Teste);
+		for (String Teste : MeuArray) {
+				System.out.printf("Nome do Carro: %s\n\n", Teste);
 		}
 
 	}

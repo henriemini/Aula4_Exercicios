@@ -107,30 +107,28 @@ public class Main {
 	}
 
 	private void start6() {
-
-		String[] MeuArray = { "civic", "gol", "palio", "uno" };
+		Scanner ler = new Scanner(System.in);
+		String[] MeuArray = new String[10];
+		MeuArray[0] = "civic";
+		MeuArray[1] = "gol";
+		MeuArray[2] = "palio";
+		MeuArray[3] = "uno";
 		int n = 0;
-		while (n < MeuArray.length) {
-			System.out.printf("Nome do Carro: %s\n\n", MeuArray[n]);
+		while (n < MeuArray.length && MeuArray[n] != null) {
+			System.out.printf("%s\n\n", MeuArray[n]);
 			n++;
 		}
 		MeuArray[1] = "L200";
-		System.out.printf("\n ---------\n");
 		for (String Teste : MeuArray) {
-			System.out.printf("Nome do Carro: %s\n\n", Teste);
+			if (Teste != null)
+				System.out.printf("%s\n\n", Teste);
 		}
-		String[] MeuNovoArray = new String[MeuArray.length + 1];
-		n = 0;
-		while (n < MeuNovoArray.length - 1) {
-			MeuNovoArray[n] = MeuArray[n];
-			n++;
-		}
-		MeuNovoArray[4] = "gol";
-
-		System.out.printf("\n ---------\n");
-
-		for (String Teste : MeuNovoArray) {
-			System.out.printf("Nome do Carro: %s\n\n", Teste);
+		
+		MeuArray[4] = "gol";
+		
+		for (String Teste : MeuArray) {
+			if (Teste != null)
+				System.out.printf("%s\n\n", Teste);
 		}
 
 	}
