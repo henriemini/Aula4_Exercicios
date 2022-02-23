@@ -136,24 +136,10 @@ public class Main {
 	}
 
 	private void start7() {
-		MesmoNome(5,5);
-		MesmoNome(10.27,10.42);
-		MesmoNome("44","Um Texto Qualquer");
+		
 	}
 	
-	private int MesmoNome(int x, int y){
-		System.out.printf("Resultado Operação 1: %d\n\n", x+y);
-		return x+y;
-		
-	}
-	private double MesmoNome(double x, double y){
-		System.out.printf("Resultado Operação 2: %f\n\n", x+y);
-		return x+y;
-		
-	}
-	private String MesmoNome(String x, String y){
-		System.out.printf("Resultado Operação 3: %s\n\n", x.concat(y));
-		return x.concat(y);
+	private void MesmoNome(){
 		
 	}
 }

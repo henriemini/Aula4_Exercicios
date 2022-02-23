@@ -142,17 +142,14 @@ public class Main {
 	}
 	
 	private int MesmoNome(int x, int y){
-		System.out.printf("Resultado Operação 1: %d\n\n", x+y);
 		return x+y;
 		
 	}
 	private double MesmoNome(double x, double y){
-		System.out.printf("Resultado Operação 2: %f\n\n", x+y);
 		return x+y;
 		
 	}
 	private String MesmoNome(String x, String y){
-		System.out.printf("Resultado Operação 3: %s\n\n", x.concat(y));
 		return x.concat(y);
 		
 	}
